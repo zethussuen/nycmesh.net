@@ -1,3 +1,5 @@
+DefaultContentLanguage = "en"
+
 title = "NYC Mesh"
 baseURL = "https://www.nycmesh.net/"
 languageCode = "en-us"
@@ -20,3 +22,19 @@ summaryLength = 10
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
+
+[languages]
+  [languages.en]
+    title = "NYC Mesh"
+    weight = 1
+    LanguageName = "English"
+      [languages.en.params]
+        LanguageName = "English"
+        description = "Join our community-owned network to replace your current internet connection."
+  [languages.es]
+    title = "NYC Mesh"
+    weight = 2
+    LanguageName = "Español"
+      [languages.es.params]
+        LanguageName = "Español"
+        description = "Únase a nuestra red de propiedad de la comunidad para reemplazar su conexión a Internet actual."

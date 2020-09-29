@@ -1,0 +1,20 @@
+[map]
+  other = "Mapa"
+
+[faq]
+  other = "FAQ"
+
+[docs]
+  other = "Documentos"
+
+[blog]
+  other = "Blog"
+
+[support]
+  other = "Ayuda"
+
+[donate]
+  other = "Donata"
+
+[get-connected]
+  other = "Conectarse"
