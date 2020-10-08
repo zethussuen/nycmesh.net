@@ -19,13 +19,18 @@
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
                 </div>
                 <nav class="f5 flex items-center dropdown-content pointer-events-none bg-white">
-                    <a href="/map" class="ml3-ns black pointer-events">{{ i18n "map" }}</a>
+                    {{- $currentPage := . -}}
+                    {{ range .Site.Menus.main -}}
+                    <a href="{{ .URL | absLangURL }}" class="ml3-ns black pointer-events">{{ .Name }}</a>
+                    {{- end }}
+                    
+                    <!-- <a href="/map" class="ml3-ns black pointer-events">{{ i18n "map" }}</a>
                     <a href="/faq" class="ml3-ns black pointer-events">{{ i18n "faq" }}</a>
                     <a href="https://docs.nycmesh.net" class="ml3-ns black pointer-events">{{ i18n "docs" }}</a>
                     <a href="/blog" class="ml3-ns black pointer-events">{{ i18n "blog" }}</a>
                     <a href="/support" class="ml3-ns black pointer-events">{{ i18n "support" }}</a>
                     <a href="/donate" class="ml3-ns black pointer-events">{{ i18n "donate" }}</a>
-                    <a href="/join" class="ml3-ns black pointer-events blue fw5">{{ i18n "get-connected" }}</a>
+                    <a href="/join" class="ml3-ns black pointer-events blue fw5">{{ i18n "get-connected" }}</a> -->
                 </nav>
             </div>
             <script>

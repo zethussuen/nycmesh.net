@@ -2,7 +2,6 @@ DefaultContentLanguage = "en"
 
 title = "NYC Mesh"
 baseURL = "https://www.nycmesh.net/"
-languageCode = "en-us"
 pygmentsCodefences = true
 pygmentsCodefencesGuessSyntax = true
 summaryLength = 10
@@ -26,15 +25,22 @@ summaryLength = 10
 [languages]
   [languages.en]
     title = "NYC Mesh"
-    weight = 1
-    LanguageName = "English"
+    weight = 0
+    languageName = "English"
       [languages.en.params]
-        LanguageName = "English"
         description = "Join our community-owned network to replace your current internet connection."
+
+    [[languages.en.menu.main]]
+      url = "/donate"
+      name = "Donate"
+
   [languages.es]
     title = "NYC Mesh"
-    weight = 2
-    LanguageName = "Español"
+    weight = 1
+    languageName = "Spanish"
       [languages.es.params]
-        LanguageName = "Español"
         description = "Únase a nuestra red de propiedad de la comunidad para reemplazar su conexión a Internet actual."
+
+    [[languages.es.menu.main]]
+      url = "/es/donate"
+      name = "Dona"

@@ -1,5 +1,6 @@
 ---
-title: "Donate"
+title: "Dona"
+slug: "dona"
 description: "Help fund our next hub!"
 aliases: ["/donation"]
 goal: 2650

@@ -17,6 +17,11 @@
     <style>{{ partial "css/main.css" . | safeCSS }}</style>
     {{ template "_internal/opengraph.html" . }}
     {{ template "_internal/twitter_cards.html" . }}
+    {{ if .IsTranslated }}
+        {{ range .Translations }}
+           <link rel="alternate" hreflang="{{ .Language.Lang }}" href="{{ .Permalink }}" title="{{ .Language.LanguageName }}">
+        {{ end }}
+    {{ end }}
 </head>
 <body class="helvetica flex flex-column justify-between" style="minHeight: 100vh">
     <div>
