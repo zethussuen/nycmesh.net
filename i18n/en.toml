@@ -1,20 +1,20 @@
 [map]
-  other = "Mapa"
+  other = "Map"
 
 [faq]
   other = "FAQ"
 
 [docs]
-  other = "Documentos"
+  other = "Docs"
 
 [blog]
   other = "Blog"
 
 [support]
-  other = "Ayuda"
+  other = "Support"
 
 [donate]
-  other = "Dona"
+  other = "Donate"
 
 [get-connected]
-  other = "Conectarse"
+  other = "Get Connected"
